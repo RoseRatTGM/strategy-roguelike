@@ -28,6 +28,7 @@ inpArr=[]; //inputs
 
 #region menu
 global.sfxVol=.5;
+global.frameStyle=2;
 //settings
 paused=false;
 mCd=0; //mouse clicking cooldown
@@ -47,12 +48,12 @@ sIndPrev=0; //previous sub-menu array index
 global.characters=[
 //name, hp, mhp, attack, t atk change, def, def c, spd,spd c, mind, stress
 //then actions
-["Cranson",10,10,5,0,1,0,3,0,5,0],
-["Blurtus",10,10,5,0,1,0,3,0,5,0],
+["Cranson",10,10,5,0,1,0,3,0,5,0,0,1],
+["Blurtus",10,10,5,0,1,0,3,0,5,0,0],
 ];
 
 global.actions=[
-["Shoot","Deal damage to a target at range"],
+[0,"Shoot","Deal damage to a target at range"],
 ];
 #endregion
 

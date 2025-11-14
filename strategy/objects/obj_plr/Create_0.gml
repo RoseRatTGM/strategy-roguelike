@@ -2,6 +2,8 @@
 selected=noone;
 target=noone;
 party=[0,1];
+canMove=true; //when hovering over ui elements you can't move to that tile
+qAction=-1; //queued action
 
 var pNum=array_length(party);
 for(var i=0;i<pNum;i++){
@@ -30,7 +32,7 @@ state_battle=function(){
 					if(floor(mouse_x/tS)==targX&&floor(mouse_y/tS)==targY){
 						other.selected=noone;
 					}//deselect
-					else if((targX==x/tS||targY==y/tS)&&canMoveToSel){ //if stationary and the targeted tile is a valid tile to move to
+					else if((targX==x/tS||targY==y/tS)&&canMoveToSel&&other.canMove){ //if stationary and the targeted tile is a valid tile to move to
 						targX=floor(mouse_x/tS);
 						targY=floor(mouse_y/tS);
 					}//move
@@ -44,7 +46,7 @@ state_battle=function(){
 		}//select character
 	}
 	
-	if(keyboard_check_pressed(ord("K"))&&selected!=noone&&target!=noone){
+	if(qAction>-1&&selected!=noone&&target!=noone){
 		with(selected){
 			perform_action(0,other.target);
 		}

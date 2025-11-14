@@ -22,6 +22,15 @@ if(selected!=noone){
 			draw_tile_color(mouse_x/tS,mouse_y/tS,col);
 			//tile mouse is hovering over is highlighted
 		}
+		
+		draw_sprite_ext(spr_floor_highlight,0,x,y,1,1,0,c_lime,1);
+		//floor highlight
+	}
+}
+
+if(target!=noone){
+	with(target){
+		draw_sprite_ext(spr_floor_highlight,0,x,y,1,1,0,c_red,1);
 	}
 }
 

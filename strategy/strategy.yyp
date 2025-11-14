@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"strategy",
   "resources":[
@@ -43,7 +43,10 @@
     {"id":{"name":"obj_plr","path":"objects/obj_plr/obj_plr.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"id":{"name":"draw_tile_color","path":"scripts/draw_tile_color/draw_tile_color.yy",},},
+    {"id":{"name":"spr_action_card_frames","path":"sprites/spr_action_card_frames/spr_action_card_frames.yy",},},
+    {"id":{"name":"spr_action_card","path":"sprites/spr_action_card/spr_action_card.yy",},},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
+    {"id":{"name":"spr_floor_highlight","path":"sprites/spr_floor_highlight/spr_floor_highlight.yy",},},
     {"id":{"name":"spr_floor","path":"sprites/spr_floor/spr_floor.yy",},},
     {"id":{"name":"spr_font","path":"sprites/spr_font/spr_font.yy",},},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},},

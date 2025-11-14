@@ -14,7 +14,8 @@ spd=0;
 perform_action=function(action,target){
 	switch(action){
 		case 0: //shoot
-			//shoot em
+			target.image_xscale=3;
+			obj_plr.target=noone;
 		break;
 	}
 }
