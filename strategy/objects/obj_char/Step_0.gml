@@ -10,6 +10,7 @@ mDist=[abs(targX-floor(mouse_x/tS)),abs(targY-floor(mouse_y/tS))];
 //how far is the mouse from myself?
 
 spd=stats[6]+stats[7];
+//what is the player's effective speed stat
 
 canMoveToSel=false;
 if((mDist[0]<=stats[6]&&mDist[1]<=spd) //is the tile within movement speed?

@@ -14,10 +14,10 @@ spd=0;
 perform_action=function(action,target){
 	switch(action){
 		case 0: //shoot
-			target.image_xscale=3;
-			obj_plr.target=noone;
+			target.stats[0]-=(stats[2]+stats[3])*(target.stats[4]+target.stats[5]);
 		break;
 	}
-}
+	obj_plr.target=noone;
+}//actions
 
 alarm[0]=1;

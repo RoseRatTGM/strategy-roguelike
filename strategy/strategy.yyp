@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"strategy",
   "resources":[
@@ -51,9 +51,12 @@
     {"id":{"name":"spr_font","path":"sprites/spr_font/spr_font.yy",},},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},},
     {"id":{"name":"spr_nme_1","path":"sprites/spr_nme_1/spr_nme_1.yy",},},
+    {"id":{"name":"spr_plr_1_shoot","path":"sprites/spr_plr_1_shoot/spr_plr_1_shoot.yy",},},
     {"id":{"name":"spr_plr_1","path":"sprites/spr_plr_1/spr_plr_1.yy",},},
     {"id":{"name":"spr_portrait_frame","path":"sprites/spr_portrait_frame/spr_portrait_frame.yy",},},
     {"id":{"name":"spr_portrait_images","path":"sprites/spr_portrait_images/spr_portrait_images.yy",},},
+    {"id":{"name":"spr_tileset_basic","path":"sprites/spr_tileset_basic/spr_tileset_basic.yy",},},
+    {"id":{"name":"ts_basic","path":"tilesets/ts_basic/ts_basic.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
