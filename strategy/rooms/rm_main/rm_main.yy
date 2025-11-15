@@ -13,9 +13,10 @@
   "isDnd":false,
   "layers":[
     {"$GMRTileLayer":"","%Name":"Tiles","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":9,"SerialiseWidth":16,"TileCompressedData":[
-          3,5,29,13,-12,29,4,9,25,-2147483648,33,-12,-2147483648,4,17,25,-2147483648,33,-12,-2147483648,4,17,25,
-          -2147483648,33,-12,-2147483648,4,17,25,-2147483648,33,-12,-2147483648,4,17,25,-2147483648,33,-12,-2147483648,
-          4,17,25,-2147483648,33,-12,-2147483648,4,17,25,-2147483648,33,-12,-2147483648,4,17,3,21,4,-12,21,1,2,
+          1,5,-14,29,4,9,25,-2147483648,0,-12,-2147483648,4,17,25,-2147483648,0,-12,-2147483648,3,17,25,-2147483648,
+          -4,0,4,36,46,0,43,-5,-2147483648,3,17,25,-2147483648,-4,0,4,33,0,0,33,-5,-2147483648,3,17,25,-2147483648,
+          -4,0,4,42,34,34,40,-5,-2147483648,5,17,25,-2147483648,0,-2147483648,-6,0,-5,-2147483648,4,17,25,-2147483648,
+          0,-12,-2147483648,2,17,3,-14,21,1,2,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_basic","path":"tilesets/ts_basic/ts_basic.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_2CC16BFB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2CC16BFB","objectId":{"name":"obj_cam","path":"objects/obj_cam/obj_cam.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-16.0,"y":0.0,},

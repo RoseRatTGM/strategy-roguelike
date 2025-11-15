@@ -42,6 +42,22 @@ sInd=0; //sub-menu array index
 sIndPrev=0; //previous sub-menu array index
 #endregion
 
+global.solids=[obj_nme_par,obj_char];
+global.mpGrid=mp_grid_create(0,0,rW/tS,rH/tS,tS,tS);
+//setup
+for(var i=0;i<array_length(global.solids);i++){
+	mp_grid_add_instances(global.mpGrid,global.solids[i],false);
+}//add solid objects to grid
+
+var tiles=layer_tilemap_get_id("Tiles");
+for(var i=0;i<tilemap_get_width(tiles);i++){
+	for(var j=0;j<tilemap_get_height(tiles);j++){
+		if(!tile_get_empty(tilemap_get(tiles,i,j))){
+			mp_grid_add_cell(global.mpGrid,i,j);
+		}//if this tile is occupied
+	}
+}//add tiles to grid
+
 #endregion
 
 #region character info

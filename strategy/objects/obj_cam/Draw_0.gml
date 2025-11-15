@@ -20,5 +20,10 @@ if(debug){
 		draw_line(0,i*tS,rW,i*tS);
 	}//horizontal grid lines (showing vertical spacing)
 	//draw grid lines
+	
+	draw_set_alpha(.1);
+	mp_grid_draw(global.mpGrid);
+	draw_set_alpha(1);
+	//show mp grid
 }
 #endregion

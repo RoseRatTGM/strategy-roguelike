@@ -1,4 +1,6 @@
-///@desc selection (debug)
+///@desc selection
+event_inherited();
+
 if(instance_position(mouse_x,mouse_y,self)&&mouse_check_button_pressed(mb_left)){
 	if(obj_plr.target==self){
 		obj_plr.target=noone;

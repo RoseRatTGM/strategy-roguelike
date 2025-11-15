@@ -19,7 +19,7 @@ if(selected!=noone){
 			if(!canMoveToSel){
 				col=c_red;
 			}
-			draw_tile_color(mouse_x/tS,mouse_y/tS,col);
+			draw_tile_color(floor(mouse_x/tS),floor(mouse_y/tS),col);
 			//tile mouse is hovering over is highlighted
 		}
 		

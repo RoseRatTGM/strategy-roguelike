@@ -1,9 +1,6 @@
 ///@desc variables
 event_inherited();
 
-targX=x/tS; //target x position
-targY=y/tS; //target y position
-//destination
 mDist=[];
 canMoveToSel=false;
 //movement checking
@@ -14,7 +11,7 @@ index=0;
 spd=0;
 //character information
 hasAnimated=false;
-sprite=spr_plr_1;
+sprites=[spr_plr_1,spr_plr_1_run];
 //sprite information
 
 perform_action=function(action,target){
@@ -32,7 +29,7 @@ perform_action=function(action,target){
 		obj_plr.target=noone;
 		obj_plr.qAction=-1;
 		hasAnimated=false;
-		sprite_index=sprite;
+		sprite_index=sprites[0];
 		image_index=0;
 		//reset
 	}

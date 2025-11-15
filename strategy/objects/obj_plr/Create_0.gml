@@ -12,7 +12,7 @@ for(var i=0;i<pNum;i++){
 		file_text_write_string(file,$"{global.characters[party[i],j]}\n"); //copy info to file
 	}
 	file_text_close(file);
-	with(instance_create_depth(x-((pNum*.5)+i)*tS,y,-98,obj_char)){
+	with(instance_create_depth((rW*.5)-((pNum*.5)*tS)+(i*tS),y,-98,obj_char)){
 		index=other.party[i];
 		identity=global.characters[index,0];
 	}

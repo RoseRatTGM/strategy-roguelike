@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_person_par",
+  "%Name":"obj_entity_par",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_person_par",
+  "name":"obj_entity_par",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
