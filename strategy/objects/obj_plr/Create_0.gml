@@ -26,6 +26,7 @@ state_battle=function(){
 		if(selected!=noone){
 			if(instance_position(mouse_x,mouse_y,obj_char)&&instance_position(mouse_x,mouse_y,obj_char)!=selected){
 				selected=instance_position(mouse_x,mouse_y,obj_char);
+				qAction=-1;
 			}//select a different character
 			else{
 				with(selected){
@@ -42,6 +43,7 @@ state_battle=function(){
 		else{
 			if(instance_position(mouse_x,mouse_y,obj_char)){
 				selected=instance_position(mouse_x,mouse_y,obj_char);
+				qAction=-1;
 			}
 		}//select character
 	}

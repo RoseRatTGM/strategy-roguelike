@@ -34,15 +34,43 @@ if(selected!=noone){
 					other.canMove=false;
 					
 					if(mouse_check_button_pressed(mb_left)){
-						other.qAction=actions[i];
-					}//use action
+						switch(other.qAction){
+							default:
+								other.qAction=actions[i];
+							break;
+							case actions[i]:
+								other.qAction=-1;
+							break;
+						}
+					}//set action to be used
 				}
 			}
 			//hovering over an action card highlights it
 			
+			if(other.qAction==actions[i]){
+				acAl=1;
+			}//selected action remains highlighted
+			
 			draw_sprite_ext(spr_action_card,actions[i],0,Y,1,1,0,c_white,acAl);
 			draw_sprite_ext(spr_action_card_frames,global.frameStyle,0,Y,1,1,0,c_white,acAl);
 		}//action cards
+	}
+	
+	if(qAction>-1&&target==noone){
+		var fn=font_add_sprite(spr_font,32,true,1);
+		draw_set_font(fn);
+		//set custom font
+		draw_set_color(c_black);
+		draw_rectangle(dW,0,dW*.75,string_height_ext(global.actions[qAction,3],-1,125)*2,false);
+		//background box
+		draw_set_color(c_white);
+		draw_set_halign(fa_right);
+		draw_set_valign(fa_top);
+		//text alignment
+		draw_text(dW*.99,dH*.01,global.actions[qAction,2]);
+		draw_text_ext_transformed(dW*.99,dH*.15,$"{global.actions[qAction,3]}",-1,125,.5,.5,0);
+		//action name and description
+		font_delete(fn);
 	}
 }
 

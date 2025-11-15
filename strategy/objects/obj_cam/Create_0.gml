@@ -53,7 +53,8 @@ global.characters=[
 ];
 
 global.actions=[
-[0,"Shoot","Deal damage to a target at range"],
+[0,spr_plr_1_shoot,"Shoot","Deal damage to a target at range"],
+[1,spr_plr_1_shoot,"Punch","Hit a single adjacent target"],
 ];
 #endregion
 

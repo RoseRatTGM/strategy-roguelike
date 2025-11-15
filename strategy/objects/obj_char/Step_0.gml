@@ -14,7 +14,8 @@ spd=stats[6]+stats[7];
 
 canMoveToSel=false;
 if((mDist[0]<=stats[6]&&mDist[1]<=spd) //is the tile within movement speed?
-&&(mDist[0]+mDist[1])<=spd*1.5){ //including diagonals
+&&(mDist[0]+mDist[1])<=spd*1.5 //including diagonals
+&&!place_meeting(mouse_x,mouse_y,solidObjects)){ //and not already occupied
 	canMoveToSel=true;
 }
 //is the tile the mouse is hovering over valid?
