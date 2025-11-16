@@ -50,7 +50,7 @@ state_battle=function(){
 	
 	if(qAction>-1&&selected!=noone&&target!=noone){
 		with(selected){
-			perform_action(0,other.target);
+			perform_action(other.qAction,other.target);
 		}
 	}//actions
 }

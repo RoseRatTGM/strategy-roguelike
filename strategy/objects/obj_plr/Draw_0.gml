@@ -1,4 +1,4 @@
-///@desc movement range
+///@desc movement range, floor highlight
 if(selected!=noone){
 	with(selected){
 		if(targX!=x/tS||targY!=y/tS){
@@ -9,7 +9,7 @@ if(selected!=noone){
 			for(var i=0;i<rW/tS;i++){
 				for(var j=0;j<rH/tS;j++){
 					if(abs(targX-i)<=spd&&abs(targY-j)<=spd
-					&&abs(targX-i)+abs(targY-j)<=spd*1.5){
+					&&abs(targX-i)+abs(targY-j)<=spd){
 						draw_tile_color(i,j,c_green,.3);
 					}
 				}
@@ -23,7 +23,7 @@ if(selected!=noone){
 			//tile mouse is hovering over is highlighted
 		}
 		
-		draw_sprite_ext(spr_floor_highlight,0,x,y,1,1,0,c_lime,1);
+		draw_sprite_ext(spr_floor_highlight,0,bbox_left,bbox_top,1,1,0,c_lime,1);
 		//floor highlight
 	}
 }

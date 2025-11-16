@@ -64,13 +64,17 @@ for(var i=0;i<tilemap_get_width(tiles);i++){
 global.characters=[
 //name, hp, mhp, attack, t atk change, def, def c, spd,spd c, mind, stress
 //then actions
-["Cranson",10,10,5,0,1,0,3,0,5,0,0,1],
+["Cranson",10,10,5,0,1,0,3,0,5,0,0],
 ["Blurtus",10,10,5,0,1,0,3,0,5,0,0],
 ];
 
 global.actions=[
-[0,spr_plr_1_shoot,"Shoot","Deal damage to a target at range"],
-[1,spr_plr_1_shoot,"Punch","Hit a single adjacent target"],
+//action card sprite, entity sprite style (2: shoot, 3: hit,
+//4: special/unique), action name, action description
+[0,2,"Pistol","Ranged, single-target damage. Best at mid-range."],
+[1,2,"Rifle","Ranged, single-target damage. Best at long-range."],
+[2,2,"Shotgun","Ranged, area of effect damage. Best at close-range."],
+[3,2,"Punch","Melee, single-target damage."],
 ];
 #endregion
 

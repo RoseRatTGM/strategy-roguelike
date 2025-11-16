@@ -9,9 +9,10 @@ spd=stats[6]+stats[7];
 //what is the player's effective speed stat
 
 canMoveToSel=false;
-if((mDist[0]<=stats[6]&&mDist[1]<=spd) //is the tile within movement speed?
-&&(mDist[0]+mDist[1])<=spd*1.5 //including diagonals
-&&!place_meeting(floor(mouse_x/tS)*tS,floor(mouse_y/tS)*tS,solidObjects)){ //and not already occupied
+if((mDist[0]<=spd&&mDist[1]<=spd) //is the tile within movement speed?
+&&(mDist[0]+mDist[1])<=spd //including diagonals
+&&!place_meeting(floor(mouse_x/tS)*tS,floor(mouse_y/tS)*tS,solidObjects) //and not already occupied
+){ //some way to check whether you can actually get to the indicated tile
 	canMoveToSel=true;
 }
 //is the tile the mouse is hovering over valid?
