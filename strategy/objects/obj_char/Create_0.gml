@@ -21,10 +21,11 @@ perform_action=function(action,target){
 	if(hasAnimated){
 		switch(action){
 			case 0: //pistol
-				var distMod=4-abs(floor(target.x/tS)-floor(x/tS));
-				target.stats[0]-=(stats[2]+stats[3])* //hp-attack
-				(target.stats[4]+target.stats[5])* //reduced by defense
-				distMod; //affected by distance
+				var distMod=abs(4-abs(floor(target.x/tS)-floor(x/tS)));
+				
+				target.stats[0]-=max(((stats[2]+stats[3])* //hp-attack
+				(target.stats[4]+target.stats[5]))- //reduced by defense
+				distMod,1); //affected by distance
 			break;
 		}
 		//perform action
