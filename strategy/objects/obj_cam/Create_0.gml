@@ -65,16 +65,16 @@ global.characters=[
 //name, hp, mhp, attack, t atk change, def, def c, spd,spd c, mind, stress
 //then actions
 ["Cranson",10,10,5,0,1,0,3,0,5,0,0],
-["Blurtus",10,10,5,0,1,0,3,0,5,0,0],
+["Blurtus",10,10,5,0,1,0,3,0,5,0,3],
 ];
 
 global.actions=[
 //action card sprite, entity sprite style (2: shoot, 3: hit,
-//4: special/unique), action name, action description
-[0,2,"Pistol","Ranged, single-target damage. Best at mid-range."],
-[1,2,"Rifle","Ranged, single-target damage. Best at long-range."],
-[2,2,"Shotgun","Ranged, area of effect damage. Best at close-range."],
-[3,2,"Punch","Melee, single-target damage."],
+//4: special/unique), range, action name, action description
+[0,2,10,"Pistol","Ranged, single-target damage. Best at mid-range."],
+[1,2,16,"Rifle","Ranged, single-target damage. Best at long-range."],
+[2,2,6,"Shotgun","Ranged, area of effect damage. Best at close-range."],
+[3,3,1,"Punch","Melee, single-target damage."],
 ];
 #endregion
 

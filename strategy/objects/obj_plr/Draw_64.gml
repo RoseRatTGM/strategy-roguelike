@@ -61,14 +61,14 @@ if(selected!=noone){
 		draw_set_font(fn);
 		//set custom font
 		draw_set_color(c_black);
-		draw_rectangle(dW,0,dW*.75,string_height_ext(global.actions[qAction,3],-1,125)*2,false);
+		draw_rectangle(dW,0,dW*.75,string_height_ext(global.actions[qAction,4],-1,125)*2,false);
 		//background box
 		draw_set_color(c_white);
 		draw_set_halign(fa_right);
 		draw_set_valign(fa_top);
 		//text alignment
-		draw_text(dW*.99,dH*.01,global.actions[qAction,2]);
-		draw_text_ext_transformed(dW*.99,dH*.15,$"{global.actions[qAction,3]}",-1,125,.5,.5,0);
+		draw_text(dW*.99,dH*.01,global.actions[qAction,3]);
+		draw_text_ext_transformed(dW*.99,dH*.15,$"{global.actions[qAction,4]}",-1,125,.5,.5,0);
 		//action name and description
 		font_delete(fn);
 	}

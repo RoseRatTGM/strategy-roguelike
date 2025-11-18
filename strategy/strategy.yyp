@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"strategy",
   "resources":[
@@ -52,6 +52,7 @@
     {"id":{"name":"spr_font","path":"sprites/spr_font/spr_font.yy",},},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},},
     {"id":{"name":"spr_nme_1","path":"sprites/spr_nme_1/spr_nme_1.yy",},},
+    {"id":{"name":"spr_plr_1_hit","path":"sprites/spr_plr_1_hit/spr_plr_1_hit.yy",},},
     {"id":{"name":"spr_plr_1_run","path":"sprites/spr_plr_1_run/spr_plr_1_run.yy",},},
     {"id":{"name":"spr_plr_1_shoot","path":"sprites/spr_plr_1_shoot/spr_plr_1_shoot.yy",},},
     {"id":{"name":"spr_plr_1","path":"sprites/spr_plr_1/spr_plr_1.yy",},},
