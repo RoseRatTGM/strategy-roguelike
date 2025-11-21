@@ -13,7 +13,7 @@
   "isDnd":false,
   "layers":[
     {"$GMRTileLayer":"","%Name":"Tiles","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":9,"SerialiseWidth":16,"TileCompressedData":[
-          1,5,-14,29,4,9,25,-2147483648,0,-12,-2147483648,4,17,25,-2147483648,0,-12,-2147483648,3,17,25,-2147483648,
+          3,5,29,13,-12,29,4,9,25,-2147483648,33,-12,-2147483648,4,17,7,34,40,-12,-2147483648,3,17,25,-2147483648,
           -8,0,-5,-2147483648,3,17,25,-2147483648,-8,0,-5,-2147483648,3,17,25,-2147483648,-8,0,-5,-2147483648,
           5,17,25,-2147483648,0,-2147483648,-6,0,-5,-2147483648,4,17,25,-2147483648,0,-12,-2147483648,2,17,3,-14,
           21,1,2,

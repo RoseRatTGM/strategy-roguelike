@@ -23,7 +23,7 @@ perform_action=function(action,target){
 	var tY=floor(target.y/tS);
 	//simplified location data
 	
-	if((abs(tX-X)+abs(tY-Y))*.5<=global.actions[action,2]){
+	if((abs(tX-X)+abs(tY-Y))*.5<=global.actions[action,2]&&collision_line(x,y,target.x,target.y,solidObjects,false,false)){
 		sprite_index=sprites[global.actions[action,1]];
 		//play action's sprite
 	}
